@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jobseeker Management</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body class="bg-light">
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Jobseeker CRUD Panel</h2>
+    <div class="card p-3 mb-4 shadow">
+      <h5>Create Jobseeker</h5>
+      <form id="createForm">
+        <input type="text" id="createName" class="form-control mb-2" placeholder="Name" required />
+        <input type="email" id="createEmail" class="form-control mb-2" placeholder="Email" required />
+        <input type="text" id="createSkills" class="form-control mb-2" placeholder="Skills" required />
+        <input type="text" id="createResume" class="form-control mb-2" placeholder="Resume" required />
+        <button class="btn btn-primary w-100">Create</button>
+      </form>
+    </div>
+    <div class="card p-3 mb-4 shadow">
+      <h5>Get Jobseeker by ID</h5>
+      <form id="getForm">
+        <input type="text" id="getId" class="form-control mb-2" placeholder="Jobseeker ID" required />
+        <button class="btn btn-info w-100">Get</button>
+      </form>
+      <div id="getResult" class="mt-2"></div>
+    </div>
+    <div class="card p-3 mb-4 shadow">
+      <h5>Update Jobseeker by ID</h5>
+      <form id="updateForm">
+        <input type="text" id="updateId" class="form-control mb-2" placeholder="Jobseeker ID" required />
+        <input type="text" id="updateName" class="form-control mb-2" placeholder="Name" required />
+        <input type="email" id="updateEmail" class="form-control mb-2" placeholder="Email" required />
+        <input type="text" id="updateSkills" class="form-control mb-2" placeholder="Skills" required />
+        <input type="text" id="updateResume" class="form-control mb-2" placeholder="Resume" required />
+        <button class="btn btn-warning w-100">Update</button>
+      </form>
+    </div>
+    <div class="card p-3 mb-4 shadow">
+      <h5>Delete Jobseeker by ID</h5>
+      <form id="deleteForm">
+        <input type="text" id="deleteId" class="form-control mb-2" placeholder="Jobseeker ID" required />
+        <button class="btn btn-danger w-100">Delete</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/jobseekers.js"></script>
+</body>
+</html>

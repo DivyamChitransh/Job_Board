@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Job Applications</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="./css/styles.css"/>
+</head>
+<body class="bg-light">
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Apply for a Job</h2>
+    <div class="card shadow mb-4">
+      <div class="card-body">
+        <form id="applicationForm">
+          <div class="mb-3">
+            <input type="text" id="jobID" class="form-control" placeholder="Job ID" required />
+          </div>
+          <div class="mb-3">
+            <input type="text" id="jobseekerID" class="form-control" placeholder="Jobseeker ID" required />
+          </div>
+          <div class="mb-3">
+            <textarea id="coverletter" class="form-control" rows="4" placeholder="Cover Letter" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Apply</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <h5>View Applications</h5>
+      <div class="d-flex gap-3 mb-3">
+        <input type="text" id="applicantID" class="form-control" placeholder="Enter Jobseeker ID"/>
+        <button onclick="getApplicationsBySeeker()" class="btn btn-info">View My Applications</button>
+      </div>
+      <div class="d-flex gap-3 mb-3">
+        <input type="text" id="appliedJobID" class="form-control" placeholder="Enter Job ID"/>
+        <button onclick="getApplicationsForJob()" class="btn btn-success">View Job Applicants</button>
+      </div>
+    </div>
+
+    <div id="applicationResults" class="mt-4"></div>
+  </div>
+
+  <script src="./js/jobapplications.js"></script>
+</body>
+</html>
