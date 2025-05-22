@@ -1,4 +1,4 @@
-const api = "http://localhost:4040/jobseekers";
+const api = "https://job-board-2-8ing.onrender.com/jobseekers";
 
 // CREATE
 document.getElementById('createForm').addEventListener('submit', async (e) => {

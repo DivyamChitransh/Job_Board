@@ -1,4 +1,4 @@
-const employerApiUrl = 'http://localhost:4040/employers';
+const employerApiUrl = 'https://job-board-2-8ing.onrender.com/employers';
 
 document.getElementById('employerForm').addEventListener('submit', async (e) => {
   e.preventDefault();

@@ -1,4 +1,4 @@
-const apiUrl = 'http://localhost:4040/applications';
+const apiUrl = 'https://job-board-2-8ing.onrender.com/applications';
 
 document.getElementById('applicationForm').addEventListener('submit', async (e) => {
   e.preventDefault();
