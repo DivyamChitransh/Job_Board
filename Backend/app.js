@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(morgan('dev'));
 app.use(cors());
 app.use(loggmiddleware);
-const URL = process.env.MONGO_URL;
+const URL = process.env.MONGO_URI;
 
 const Database = async() => {
     try{
