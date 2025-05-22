@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require('cors');
@@ -16,7 +17,7 @@ app.use(express.json());
 app.use(morgan('dev'));
 app.use(cors());
 app.use(loggmiddleware);
-const URL = 'mongodb://localhost:27017/JobBoard';
+const URL = process.env.MONGO_URL;
 
 const Database = async() => {
     try{
@@ -39,7 +40,7 @@ app.get('/',(req,res) => {;
 })
 app.use(errorhandlerr);
 
-const PORT = 4040;
+const PORT = process.env.PORT ;
 app.listen(PORT, () => {
     console.log(`Server Running at ${PORT}`);
     Database();
