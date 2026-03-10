@@ -116,7 +116,7 @@ This project mainly focuses on **backend development and REST API architecture**
 # ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the repository
-git clone https://github.com/your-username/job-board.git
+https://github.com/DivyamChitransh/Job_Board.git
 cd job-board
 ---
 ### 2️⃣ Install dependencies
