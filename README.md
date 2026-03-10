@@ -73,7 +73,7 @@ This project mainly focuses on **backend development and REST API architecture**
 
 ## Login Page
 
-![Login](./screenshots/Job Board.png)
+![Login](./screenshots/login.png)
 
 ---
 
